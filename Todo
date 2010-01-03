@@ -1,5 +1,6 @@
 TODO list for Perl module DateTime::Subspan::Weekly
 
-- Nothing yet
+Test for daylight-savings-time boundaries, leap years, etc.
 
+Decide whether interface should change to object-oriented.
 

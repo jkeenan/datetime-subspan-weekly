@@ -71,7 +71,7 @@ sub _date_is_in_span {
     $span->contains( $date ) ? 1 : 0;
 }
 
-#################### main pod documentation begin ###################
+#################### DOCUMENTATION ###################
 
 
 =head1 NAME
@@ -167,7 +167,7 @@ date does not fall within permitted range.
 =back
 
 
-$rv = validate( {
+$rv = in_range( {
     starting_date => $starting_date,
     range        => $range_ref,
     target       => $dt,
@@ -179,6 +179,8 @@ $rv = validate( {
 This is very much alpha code; the interface may change at any time.  In
 particular, the interface may change to an object-oriented one to become more
 consistent with the rest of the DateTime ecosphere.
+
+Not yet tested for daylight-savings-time boundaries, leap years, etc.
 
 =head1 SUPPORT
 
@@ -194,12 +196,13 @@ below.
 
 =head1 COPYRIGHT
 
+Copyright 2010 James E Keenan.
+
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
 The full text of the license can be found in the
 LICENSE file included with this module.
-
 
 =head1 PREREQUISITES
 
@@ -207,9 +210,5 @@ Requires the DateTime and DateTime-set distributions from CPAN.
 
 =cut
 
-#################### main pod documentation end ###################
-
-
 1;
-# The preceding line will help the module return a true value
 
