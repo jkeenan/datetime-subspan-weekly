@@ -10,5 +10,9 @@ WriteMakefile(
     ABSTRACT     => 'Determine whether event falls within weekly recurring range',
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
+                     'Carp' => 0,
+                     'DateTime' => 0,
+                     'DateTime::Set' => 0,
+                     'DateTime::Span' => 0,
                     },
 );
