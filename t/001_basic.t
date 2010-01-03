@@ -2,13 +2,13 @@
 use strict;
 use warnings;
 use DateTime::Subspan::Weekly qw( in_range );
-use Test::More qw(no_plan); # tests => 1;
+use Test::More tests =>  6;
 
+my ($dt, $rv);
 my $starting_date = { day => 6, hour => 0, minute => 0, second => 0 };
 my $range_ref = { days => 5, hours => 20, minutes => 0, seconds => 0 };
-my ($dt, $rv);
 
-$dt = DateTime->new(
+my %dt20100101123647 = (
    year   => 2010,
    month  => 1,
    day    => 1,
@@ -16,6 +16,12 @@ $dt = DateTime->new(
    minute => 36,
    second => 47,
    time_zone => 'America/New_York',
+);
+my %dt20100102123647 = %dt20100101123647;
+$dt20100102123647{day} = 2;
+
+$dt = DateTime->new(
+    %dt20100101123647,
 );
 $rv = in_range( {
     starting_date => $starting_date,
@@ -25,13 +31,7 @@ $rv = in_range( {
 ok(! $rv, "$dt is not in range");
 
 $dt = DateTime->new(
-   year   => 2010,
-   month  => 1,
-   day    => 2,
-   hour   => 12,
-   minute => 36,
-   second => 47,
-   time_zone => 'America/New_York',
+    %dt20100102123647 
 );
 $rv = in_range( {
     starting_date => $starting_date,
@@ -43,13 +43,7 @@ ok($rv, "$dt is in range");
 $starting_date = { day => 6, hour => 16, minute => 0, second => 0 };
 
 $dt = DateTime->new(
-   year   => 2010,
-   month  => 1,
-   day    => 1,
-   hour   => 12,
-   minute => 36,
-   second => 47,
-   time_zone => 'America/New_York',
+    %dt20100101123647,
 );
 $rv = in_range( {
     starting_date => $starting_date,
@@ -61,13 +55,7 @@ ok(! $rv, "$dt is not in range");
 $starting_date = { day => 5, hour => 16, minute => 0, second => 0 };
 
 $dt = DateTime->new(
-   year   => 2010,
-   month  => 1,
-   day    => 1,
-   hour   => 12,
-   minute => 36,
-   second => 47,
-   time_zone => 'America/New_York',
+    %dt20100101123647,
 );
 $rv = in_range( {
     starting_date => $starting_date,
@@ -95,13 +83,7 @@ $rv = in_range( {
 ok($rv, "$dt is in range");
 
 $dt = DateTime->new(
-   year   => 2010,
-   month  => 1,
-   day    => 2,
-   hour   => 12,
-   minute => 36,
-   second => 47,
-   time_zone => 'America/New_York',
+    %dt20100102123647,
 );
 $rv = in_range( {
     starting_date => $starting_date,
