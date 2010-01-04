@@ -1,8 +1,12 @@
-MANIFEST
-README
-LICENSE
-Todo
 Changes
-Makefile.PL
 lib/DateTime/Subspan/Weekly.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+README
 t/001_basic.t
+t/002_firstday.t
+t/003_lastday.t
+t/004_singleday.t
+Todo

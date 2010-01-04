@@ -1,5 +1,8 @@
 Revision history for Perl module DateTime::Subspan::Weekly
 
+0.03 Sun Jan  3 19:43:00 2010
+    - add three more test files and MANIFEST.SKIP
+
 0.02 Sun Jan  3 13:25:00 2010
     - minor touchups
 

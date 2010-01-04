@@ -26,8 +26,8 @@ html/
 research/
 superseded/
 svndiff/
-^Todo
 ^.cvsignore
 ^init
 ^results
 ^htmlify
+^.git
