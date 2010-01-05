@@ -9,7 +9,7 @@ use DateTime::Span;
 BEGIN {
     use Exporter ();
     our ($VERSION, @ISA, @EXPORT_OK);
-    $VERSION     = '0.03';
+    $VERSION     = '0.04';
     @ISA         = qw(Exporter);
     @EXPORT_OK   = qw(
         in_range
