@@ -1,4 +1,4 @@
-TODO list for Perl module DateTime::Subspan::Weekly
+TODO list for Perl module DateTimeX::Subspan::Weekly
 
 Test for daylight-savings-time boundaries, leap years, etc.
 

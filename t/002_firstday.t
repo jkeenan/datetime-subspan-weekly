@@ -1,7 +1,7 @@
 #perl
 use strict;
 use warnings;
-use DateTime::Subspan::Weekly qw( in_range );
+use DateTimeX::Subspan::Weekly qw( in_range );
 use Test::More tests =>  3;
 
 # Test cases where target datetime occurs on first day of permitted subspan

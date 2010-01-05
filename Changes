@@ -1,4 +1,8 @@
-Revision history for Perl module DateTime::Subspan::Weekly
+Revision history for Perl module DateTimeX::Subspan::Weekly
+
+0.04 Mon Jan  4 20:56:00 2010
+    - Change name of distribution to DateTimeX-Subspan-Weekly
+      per suggestion by Dave Rolsky
 
 0.03 Sun Jan  3 19:43:00 2010
     - add three more test files and MANIFEST.SKIP

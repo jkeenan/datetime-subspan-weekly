@@ -1,4 +1,4 @@
-package DateTime::Subspan::Weekly;
+package DateTimeX::Subspan::Weekly;
 use strict;
 use Carp;
 use DateTime;
@@ -76,11 +76,11 @@ sub _date_is_in_span {
 
 =head1 NAME
 
-DateTime::Subspan::Weekly - Determine whether event falls within weekly recurring range
+DateTimeX::Subspan::Weekly - Determine whether event falls within weekly recurring range
 
 =head1 SYNOPSIS
 
-    use DateTime::Subspan::Weekly qw( in_range );
+    use DateTimeX::Subspan::Weekly qw( in_range );
 
     $rv = in_range( {
         starting_date   => $starting_date,  # Hash ref
@@ -95,12 +95,12 @@ time of day.  Suppose further that that week can be divided into two subspans:
 one in which an event is permitted to occur, and the other in which the event
 is not permitted to occur.
 
-DateTime::Subspan::Weekly provides functions to determine a particular date
+DateTimeX::Subspan::Weekly provides functions to determine a particular date
 falls in the permitted range or not.
 
 =head1 SUBROUTINES
 
-DateTime::Subspan::Weekly currently exports one subroutine on request.
+DateTimeX::Subspan::Weekly currently exports one subroutine on request.
 
 =head2 C<in_range()>
 

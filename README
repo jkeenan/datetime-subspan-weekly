@@ -1,9 +1,9 @@
-README for DateTime::Subspan::Weekly
+README for DateTimeX::Subspan::Weekly
 
-DateTime::Subspan::Weekly - Determine whether event falls within weekly
+DateTimeX::Subspan::Weekly - Determine whether event falls within weekly
 recurring range
 
-    use DateTime::Subspan::Weekly qw( in_range );
+    use DateTimeX::Subspan::Weekly qw( in_range );
 
     $rv = in_range( {
         starting_date   => $starting_date,  # Hash ref
@@ -16,10 +16,10 @@ and time of day. Suppose further that that week can be divided into two
 subspans: one in which an event is permitted to occur, and the other in
 which the event is not permitted to occur.
 
-DateTime::Subspan::Weekly provides functions to determine a particular
+DateTimeX::Subspan::Weekly provides functions to determine a particular
 date falls in the permitted range or not.
 
-Call 'perldoc lib/DateTime/Subspan/Weekly.pm' for more documentation.
+Call 'perldoc lib/DateTimeX/Subspan/Weekly.pm' for more documentation.
 
 You can install this module with:
 
