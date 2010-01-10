@@ -9,7 +9,7 @@ use DateTime::Span;
 BEGIN {
     use Exporter ();
     our ($VERSION, @ISA, @EXPORT_OK);
-    $VERSION     = '0.04';
+    $VERSION     = '0.05';
     @ISA         = qw(Exporter);
     @EXPORT_OK   = qw(
         in_range
@@ -18,6 +18,7 @@ BEGIN {
 
 sub in_range {
     my $args = shift;
+#    $args->{target}->set_time_zone('UTC');
     my $sixdays = DateTime::Duration->new( days  => 6 );
     my $oneweek = DateTime::Duration->new( weeks => 1 );
 

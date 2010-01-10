@@ -1,5 +1,9 @@
 Revision history for Perl module DateTimeX::Subspan::Weekly
 
+0.05 Sun Jan 10 08:40:00 2010
+    - Correct erroneous import in t/004_singleday.t per
+      https://rt.cpan.org/Ticket/Display.html?id=53548; andreas++.
+
 0.04 Mon Jan  4 20:56:00 2010
     - Change name of distribution to DateTimeX-Subspan-Weekly
       per suggestion by Dave Rolsky
